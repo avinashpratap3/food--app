@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link
+rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+    
+    <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <title>JTGeats</title>
+</head>
+<body>
+    <section class="addtocart">
+        <div id="cartModal" class="modal">
+            <div class="modal-content">
+                <div>
+                    <img src="/Users/avinashpratapsingh/Documents/jtg_assignment/assets/akar-icons_shopping-bag.png" alt="">
+              
+    
+                </div>
+                <div>
+                    <h2>Your Cart is Empty</h2>
+    
+                </div>
+                <div>
+                    <button id="closeModal">Close</button>
+    
+                </div>
+              
+              
+            </div>
+            
+          </div>
+
+    </section>
+    <section class="requestdish">
+        <div id="reqcartModal" class="reqmodal">
+            <div class="reqmodal-content">
+                <div class="reqadish">
+                    <h2>Request a Dish</h2>
+                    
+              
+    
+                </div>
+                <div>
+                    <form action="">
+                        <div class="form">
+                            <div>
+                                <div class="name">Name*</div>
+                                <input type="text" id="name" placeholder="Enter name of the dish">
+
+                            </div>
+                            <div>
+                                <div class="imgurl">Upload an Image</div>
+                                <input type="text" id="imgurl" placeholder="Paste URL">
+
+                            </div>
+                        
+
+                        
+
+                        </div>
+                        
+                        
+
+                    </form>
+                </div>
+                <div>
+                <button class="cancel"  id="reqcloseModal">Cancel</button>
+                <button class="submit">Submit Request</button>
+
+                </div>
+                
+            </div>
+            
+          </div>
+
+    </section>
+      
+
+    <header>
+        
+            <div class="nav navbar">
+                
+                <a class="logo" href="">JTGeats</a>
+                <a href="">Home</a>
+                <a href="">About</a>
+                <a href="">Menu</a>
+                <a href="">Blog</a>
+                <a href="">Contact</a>
+                <span class="cart">
+                   <div class="cart-dot"><h1>.</h1></div>
+                   <a href=""><img src="/Users/avinashpratapsingh/Documents/jtg_assignment/assets/Card (1).png" alt=""></a>
+                   <a id="cartBtn" href=""><img src="/Users/avinashpratapsingh/Documents/jtg_assignment/assets/Card.png" alt=""></a>
+                </span>
+                
+            </div>
+            <div class="chef">
+                <div class="header-search">
+                    <h1>Authentic Home food in India</h1>
+                    <p>JTGeats is a courier service in which authentic home cook food is delivered to a customer.</p>
+                    <span>
+                        <div class="input-div">
+                            <input placeholder="Search food you love" type="text">
+                        <button>Search</button>
+
+                        </div>
+                        
+                    </span>
+
+                </div>
+                <div class="header-img">
+                    <img src="/Users/avinashpratapsingh/Documents/jtg_assignment/assets/cuate.png" alt="">
+
+                </div>
+            </div>
+        
+
+    </header>
+    <main>
+        <section class="kitchen">
+            <div class="outer-cont">
+                <div class="listings">
+                    <div class="home">Home Kitchen</div>
+                    <div class="row-1">
+                        <div class="card">
+                            
+                            <div class="pic">
+                                <div class="discount">
+                                    <img src="/Users/avinashpratapsingh/Documents/jtg_assignment/assets/Frame 17.png" alt="">
+                                </div>
+                                <img src="/Users/avinashpratapsingh/Documents/jtg_assignment/assets/unsplash_33GPuoFI7v8.png" alt="">
+                            </div>
+                            <div class="info">
+                                <div class="price">
+                                    <div>Home made pizza</div>
+                                    <div class="rate"><img src="/Users/avinashpratapsingh/Documents/jtg_assignment/assets/pricecard.png" alt=""></div>
+                                </div>
+                                <div class="rating">
+                                    <img src="/Users/avinashpratapsingh/Documents/jtg_assignment/assets/Frame 15.png" alt="">
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="pic">
+                                <img src="/Users/avinashpratapsingh/Documents/jtg_assignment/assets/unsplash_CbNAuxSZTFo.png" alt="">
+                            </div>
+                            <div class="info">
+                                <div class="price">
+                                    <div>Home made pizza</div>
+                                    <div class="rate"><img src="/Users/avinashpratapsingh/Documents/jtg_assignment/assets/pricecard.png" alt=""></div>
+                                </div>
+                                <div class="rating">
+                                    <img src="/Users/avinashpratapsingh/Documents/jtg_assignment/assets/Frame 15.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="pic">
+                                <div class="discount">
+                                    <img src="/Users/avinashpratapsingh/Documents/jtg_assignment/assets/Frame 17.png" alt="">
+                                </div>
+                                <img src="/Users/avinashpratapsingh/Documents/jtg_assignment/assets/unsplash_60nzTP7_hMQ.png" alt="">
+                            </div>
+                            <div class="info">
+                                <div class="price">
+                                    <div>Home made pizza</div>
+                                    <div class="rate"><img src="/Users/avinashpratapsingh/Documents/jtg_assignment/assets/pricecard.png" alt=""></div>
+                                </div>
+                                <div class="rating">
+                                    <img src="/Users/avinashpratapsingh/Documents/jtg_assignment/assets/Frame 15.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="pic">
+                                <img src="/Users/avinashpratapsingh/Documents/jtg_assignment/assets/unsplash_CbNAuxSZTFo.png" alt="">
+                            </div>
+                            <div class="info">
+                                <div class="price">
+                                    <div>Home made pizza</div>
+                                    <div class="rate"><img src="/Users/avinashpratapsingh/Documents/jtg_assignment/assets/pricecard.png" alt=""></div>
+                                </div>
+                                <div class="rating">
+                                    <img src="/Users/avinashpratapsingh/Documents/jtg_assignment/assets/Frame 15.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="row-2">
+                        <div class="card">
+                            <div class="pic">
+                                <div class="discount">
+                                    <img src="/Users/avinashpratapsingh/Documents/jtg_assignment/assets/Frame 17.png" alt="">
+                                </div>
+                                <img src="/Users/avinashpratapsingh/Documents/jtg_assignment/assets/unsplash_MqT0asuoIcU-2.png" alt="">
+                            </div>
+                            <div class="info">
+                                <div class="price">
+                                    <div>Home made pizza</div>
+                                    <div class="rate"><img src="/Users/avinashpratapsingh/Documents/jtg_assignment/assets/pricecard.png" alt=""></div>
+                                </div>
+                                <div class="rating">
+                                    <img src="/Users/avinashpratapsingh/Documents/jtg_assignment/assets/Frame 15.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="pic">
+                                <img src="/Users/avinashpratapsingh/Documents/jtg_assignment/assets/unsplash_MqT0asuoIcU.png" alt="">
+                            </div>
+                            <div class="info">
+                                <div class="price">
+                                    <div>Home made pizza</div>
+                                    <div class="rate"><img src="/Users/avinashpratapsingh/Documents/jtg_assignment/assets/pricecard.png" alt=""></div>
+                                </div>
+                                <div class="rating">
+                                    <img src="/Users/avinashpratapsingh/Documents/jtg_assignment/assets/Frame 15.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="pic">
+                                <div class="discount">
+                                    <img src="/Users/avinashpratapsingh/Documents/jtg_assignment/assets/Frame 17.png" alt="">
+                                </div>
+                                <img src="/Users/avinashpratapsingh/Documents/jtg_assignment/assets/unsplash_nP11TkjxJ7s.png" alt="">
+                            </div>
+                            <div class="info">
+                                <div class="price">
+                                    <div>Home made pizza</div>
+                                    <div class="rate"><img src="/Users/avinashpratapsingh/Documents/jtg_assignment/assets/pricecard.png" alt=""></div>
+                                </div>
+                                <div class="rating">
+                                    <img src="/Users/avinashpratapsingh/Documents/jtg_assignment/assets/Frame 15.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="pic">
+                                <div class="discount">
+                                    <img src="/Users/avinashpratapsingh/Documents/jtg_assignment/assets/Frame 17.png" alt="">
+                                </div>
+                                <img src="/Users/avinashpratapsingh/Documents/jtg_assignment/assets/unsplash_sejqj6Eaqe8.png" alt="">
+                            </div>
+                            <div class="info">
+                                <div class="price">
+                                    <div>Home made pizza</div>
+                                    <div class="rate"><img src="/Users/avinashpratapsingh/Documents/jtg_assignment/assets/pricecard.png" alt=""></div>
+                                </div>
+                                <div class="rating">
+                                    <img src="/Users/avinashpratapsingh/Documents/jtg_assignment/assets/Frame 15.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row-3">
+                        <div class="card">
+                            <div class="pic">
+                                <div class="discount">
+                                    <img src="/Users/avinashpratapsingh/Documents/jtg_assignment/assets/Frame 17.png" alt="">
+                                </div>
+                                <img src="/Users/avinashpratapsingh/Documents/jtg_assignment/assets/unsplash_UxRhrU8fPHQ-2.png" alt="">
+                            </div>
+                            <div class="info"><div class="price">
+                                <div>Home made pizza</div>
+                                <div class="rate"><img src="/Users/avinashpratapsingh/Documents/jtg_assignment/assets/pricecard.png" alt=""></div>
+                            </div>
+                            <div class="rating">
+                                <img src="/Users/avinashpratapsingh/Documents/jtg_assignment/assets/Frame 15.png" alt="">
+                            </div></div>
+                        </div>
+                        <div class="card">
+                            <div class="pic">
+                            <img src="/Users/avinashpratapsingh/Documents/jtg_assignment/assets/unsplash_UxRhrU8fPHQ-2.png" alt="">    
+                            </div>
+                            <div class="info">
+                                <div class="price">
+                                    <div>Home made pizza</div>
+                                    <div class="rate"><img src="/Users/avinashpratapsingh/Documents/jtg_assignment/assets/pricecard.png" alt=""></div>
+                                </div>
+                                <div class="rating">
+                                    <img src="/Users/avinashpratapsingh/Documents/jtg_assignment/assets/Frame 15.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="pic">
+                                <div class="discount">
+                                    <img src="/Users/avinashpratapsingh/Documents/jtg_assignment/assets/Frame 17.png" alt="">
+                                </div>
+                                <img src="/Users/avinashpratapsingh/Documents/jtg_assignment/assets/unsplash_Y6OgisiGBjM-2.png" alt="">
+                            </div>
+                            <div class="info">
+                                <div class="price">
+                                    <div>Home made pizza</div>
+                                    <div class="rate"><img src="/Users/avinashpratapsingh/Documents/jtg_assignment/assets/pricecard.png" alt=""></div>
+                                </div>
+                                <div class="rating">
+                                    <img src="/Users/avinashpratapsingh/Documents/jtg_assignment/assets/Frame 15.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="pic">
+                            <img src="/Users/avinashpratapsingh/Documents/jtg_assignment/assets/unsplash_Y6OgisiGBjM.png" alt="">    
+                            </div>
+                            <div class="info">
+                                <div class="price">
+                                    <div>Home made pizza</div>
+                                    <div class="rate"><img src="/Users/avinashpratapsingh/Documents/jtg_assignment/assets/pricecard.png" alt=""></div>
+                                </div>
+                                <div class="rating">
+                                    <img src="/Users/avinashpratapsingh/Documents/jtg_assignment/assets/Frame 15.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                </div>
+                <div class="slider-out">
+                    <div class="pop">
+                        Popular Items
+                    </div>
+                    <div class="swipe-cont">
+                        <div class="swiper">
+                            <!-- Additional required wrapper -->
+                            <div class="swiper-wrapper">
+                              <!-- Slides -->
+                              <div class="swiper-slide">
+                                <div class="card">
+                                    <div class="pic">
+                                        <div class="discount">
+                                            <img src="/Users/avinashpratapsingh/Documents/jtg_assignment/assets/Frame 17.png" alt="">
+                                        </div>
+                                        <img src="/Users/avinashpratapsingh/Documents/jtg_assignment/assets/unsplash_33GPuoFI7v8.png" alt="">
+                                    </div>
+                                    <div class="info">
+                                        <div class="price">
+                                            <div>Home made pizza</div>
+                                            <div class="rate"><img src="/Users/avinashpratapsingh/Documents/jtg_assignment/assets/pricecard.png" alt=""></div>
+                                        </div>
+                                        <div class="rating">
+                                            <img src="/Users/avinashpratapsingh/Documents/jtg_assignment/assets/Frame 15.png" alt="">
+                                        </div>
+        
+                                    </div>
+                                </div>
+                              </div>
+                              <div class="swiper-slide">
+                                <div class="card">
+                                    <div class="pic">
+                                        <div class="discount">
+                                            <img src="/Users/avinashpratapsingh/Documents/jtg_assignment/assets/Frame 17.png" alt="">
+                                        </div>
+                                        <img src="/Users/avinashpratapsingh/Documents/jtg_assignment/assets/unsplash_60nzTP7_hMQ.png" alt="">
+                                    </div>
+                                    <div class="info">
+                                        <div class="price">
+                                            <div>Home made pizza</div>
+                                            <div class="rate"><img src="/Users/avinashpratapsingh/Documents/jtg_assignment/assets/pricecard.png" alt=""></div>
+                                        </div>
+                                        <div class="rating">
+                                            <img src="/Users/avinashpratapsingh/Documents/jtg_assignment/assets/Frame 15.png" alt="">
+                                        </div>
+        
+                                    </div>
+                                </div>
+                              </div>
+                              <div class="swiper-slide">
+                                <div class="card">
+                                    <div class="pic">
+                                        <img src="/Users/avinashpratapsingh/Documents/jtg_assignment/assets/unsplash_CbNAuxSZTFo-2.png" alt="">
+                                    </div>
+                                    <div class="info">
+                                        <div class="price">
+                                            <div>Home made pizza</div>
+                                            <div class="rate"><img src="/Users/avinashpratapsingh/Documents/jtg_assignment/assets/pricecard.png" alt=""></div>
+                                        </div>
+                                        <div class="rating">
+                                            <img src="/Users/avinashpratapsingh/Documents/jtg_assignment/assets/Frame 15.png" alt="">
+                                        </div>
+        
+                                    </div>
+                                </div>
+                              </div>
+                              <div class="swiper-slide">
+                                <div class="card">
+                                <div class="pic">
+                                    <img src="/Users/avinashpratapsingh/Documents/jtg_assignment/assets/unsplash_CbNAuxSZTFo.png" alt="">
+                                </div>
+                                <div class="info">
+                                    <div class="price">
+                                        <div>Home made pizza</div>
+                                        <div class="rate"><img src="/Users/avinashpratapsingh/Documents/jtg_assignment/assets/pricecard.png" alt=""></div>
+                                    </div>
+                                    <div class="rating">
+                                        <img src="/Users/avinashpratapsingh/Documents/jtg_assignment/assets/Frame 15.png" alt="">
+                                    </div>
+    
+                                </div>
+                            </div></div>
+                              <div class="swiper-slide"><div class="card">
+                                <div class="pic">
+                                    <img src="/Users/avinashpratapsingh/Documents/jtg_assignment/assets/unsplash_MqT0asuoIcU-2.png" alt="">
+                                </div>
+                                <div class="info">
+                                    <div class="price">
+                                        <div>Home made pizza</div>
+                                        <div class="rate"><img src="/Users/avinashpratapsingh/Documents/jtg_assignment/assets/pricecard.png" alt=""></div>
+                                    </div>
+                                    <div class="rating">
+                                        <img src="/Users/avinashpratapsingh/Documents/jtg_assignment/assets/Frame 15.png" alt="">
+                                    </div>
+    
+                                </div>
+                            </div></div>
+                            <div class="swiper-slide"><div class="card">
+                                <div class="pic">
+                                    <img src="/Users/avinashpratapsingh/Documents/jtg_assignment/assets/unsplash_nP11TkjxJ7s.png" alt="">
+                                </div>
+                                <div class="info">
+                                    <div class="price">
+                                        <div>Home made pizza</div>
+                                        <div class="rate"><img src="/Users/avinashpratapsingh/Documents/jtg_assignment/assets/pricecard.png" alt=""></div>
+                                    </div>
+                                    <div class="rating">
+                                        <img src="/Users/avinashpratapsingh/Documents/jtg_assignment/assets/Frame 15.png" alt="">
+                                    </div>
+    
+                                </div>
+                            </div></div>
+                        
+                            </div>
+                          </div>
+                          <div class="swiper-button-prev">
+                            <img src="/Users/avinashpratapsingh/Documents/jtg_assignment/assets/Arrowleft.png" alt="">
+                          </div>
+                          <div class="swiper-button-next">
+                            <img src="/Users/avinashpratapsingh/Documents/jtg_assignment/assets/Arrow.png" alt="">
+                          </div>
+
+                    </div>
+                   
+
+    
+                </div>
+                <div>
+                    <div class="pop">
+                        <button id="reqBtn">Request a Dish</button>
+                    </div>
+
+                </div>
+
+            </div>
+            
+            
+            
+        </section>
+        <section class="service">
+            <div class="service-cont">
+                <div class="service-text">
+                    <div>
+                        <h2>We are providing best <br>
+                            home cooked food delivery service.</h2>
+                    </div>
+                    <div>
+                        <p>Away from home and craving the tasty homemade recipes?<br>
+                        Choose from a selection of our delicious home cooked dishes </p>
+                    </div>
+    
+                </div>
+                
+                <div class="vid-cont">
+                    <video autoplay id="video" src="/Users/avinashpratapsingh/Documents/jtg_assignment/assets/jtg-demo.MOV" controls class="vid" type="video/mp4"></video>
+                    <div class="play-btn" id="playBtn"></div>
+    
+                </div>
+
+            </div>
+            
+
+            
+        </section>
+        <section class="Contact">
+            <div class="cont-div">
+                <div class="Contact-text">
+                    <h2>Do you have a question
+                        or want to become a seller?</h2>
+                        <p>Fill this form and our manager will contact you next 48 hours.</p>
+                        <span><input type="text" placeholder="Your name">
+                            <input class="e-mail" type="text" placeholder="Your e-mail">
+                        </span>
+                        <div class="cont-input">
+                            <input placeholder="Your message"  type="text" >
+
+                        </div>
+                        <button>Submit</button>
+                        
+                </div>
+                <div class="cute">
+                    <img src="assets/Food_delivery_cute_man_riding_motorcycles_cartoon_art_illustration 2.png" alt="">
+                </div>
+
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-div" >
+            <a class="logo" href="">JTGeats</a>
+            <a href="">Home</a>
+            <a href="">About</a>
+            <a href="">Menu</a>
+            <a href="">Blog</a>
+            <a href="">Contact</a>
+            <span class="cart">
+            <a href=""><img src="/Users/avinashpratapsingh/Documents/jtg_assignment/assets/Card-2.png" alt=""></a>
+           <a href=""><img src="/Users/avinashpratapsingh/Documents/jtg_assignment/assets/Cardfb.png" alt=""></a>
+           
+
+            </span>
+            <hr>
+            
+            
+        </div>
+    </footer>
+    <script src="/Users/avinashpratapsingh/Documents/jtg_assignment/logics/play-pause.js"></script>
+    
+    <script src="/Users/avinashpratapsingh/Documents/jtg_assignment/logics/addtocart.js"></script>
+
+    <script src="/Users/avinashpratapsingh/Documents/jtg_assignment/logics/requestdish.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="/Users/avinashpratapsingh/Documents/jtg_assignment/logics/slider.js"></script>
+</body>
+</html>
